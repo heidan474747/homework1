@@ -1,0 +1,22 @@
+--cpu Cortex-M3
+"keil_watch\startup_stm32f103xb.o"
+"keil_watch\main.o"
+"keil_watch\gpio.o"
+"keil_watch\stm32f1xx_it.o"
+"keil_watch\stm32f1xx_hal_msp.o"
+"keil_watch\stm32f1xx_hal_gpio_ex.o"
+"keil_watch\stm32f1xx_hal.o"
+"keil_watch\stm32f1xx_hal_rcc.o"
+"keil_watch\stm32f1xx_hal_rcc_ex.o"
+"keil_watch\stm32f1xx_hal_gpio.o"
+"keil_watch\stm32f1xx_hal_dma.o"
+"keil_watch\stm32f1xx_hal_cortex.o"
+"keil_watch\stm32f1xx_hal_pwr.o"
+"keil_watch\stm32f1xx_hal_flash.o"
+"keil_watch\stm32f1xx_hal_flash_ex.o"
+"keil_watch\stm32f1xx_hal_exti.o"
+"keil_watch\system_stm32f1xx.o"
+--strict --scatter "Keil_watch\Keil_watch.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Keil_watch.map" -o Keil_watch\Keil_watch.axf
